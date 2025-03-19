@@ -630,7 +630,11 @@ const VideoCallingApp: React.FC = () => {
             sx={{ 
               width: '100%', 
               height: '100%', 
-              position: 'relative'
+              position: 'relative',
+              bgcolor: '#000000',
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center'
             }}
           >
             <video 
@@ -676,8 +680,8 @@ const VideoCallingApp: React.FC = () => {
           <Box 
             sx={{ 
               position: 'fixed', 
-              bottom: 100, 
-              right: 30, 
+              bottom: 32, 
+              right: 10, 
               width: 280, 
               height: 180, 
               borderRadius: 2,
@@ -701,7 +705,7 @@ const VideoCallingApp: React.FC = () => {
               style={{ 
                 width: '100%', 
                 height: '100%', 
-                objectFit: 'cover',
+                objectFit: 'contain',
                 display: isCameraOn ? 'block' : 'none'
               }} 
             />
